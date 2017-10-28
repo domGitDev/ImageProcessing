@@ -54,7 +54,7 @@ void Enhancement::InitFromMat(Mat& image_ptr_data)
 }
 
 
-auto Enhancement::ImagesPathFromDirectory(string directory, vector<string> types)
+vector<string> Enhancement::ImagesPathFromDirectory(string directory, vector<string> types)
 {
 	vector<string> filenames;
 
