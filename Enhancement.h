@@ -20,14 +20,14 @@ public:
 	static std::shared_ptr<Enhancement> GetInstancePtr();
 	static std::shared_ptr<Mat> GetGrayImage(Mat& img, bool show);
 	static string BuildFullPathname(string directory, string filename, string ext);
-	static auto ImagesPathFromDirectory(string directory, vector<string> types);
+	static vector<string> ImagesPathFromDirectory(string directory, vector<string> types);
 
 	std::shared_ptr<Mat> GetImage();
 
 	// PRE-PROCESSING
 	Mat EqualizeHistogram(bool show);
 	Mat EqualizeClahe(bool show);
-  std::shared_ptr<Mat> GaussianFilter(Mat& img, bool show);
+  	std::shared_ptr<Mat> GaussianFilter(Mat& img, bool show);
 	std::shared_ptr<Mat> GammaCorrection(Mat& img, float gamma, bool show);
 	std::pair<std::shared_ptr<Mat>, bool> ComputeHistogram(Mat& img, bool show);
   
